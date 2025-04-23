@@ -2,6 +2,7 @@ using FoodApplication.ContextDBConfig;
 using FoodApplication.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using FoodApplication.Respository;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,9 @@ builder.Services.AddDbContext<FoodApplicationDBContext>(options =>
 options.UseSqlServer(dbConnection));
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<FoodApplicationDBContext>();
+
+builder.Services.AddTransient<IData, Data>();
+
 var app = builder.Build();
 
 

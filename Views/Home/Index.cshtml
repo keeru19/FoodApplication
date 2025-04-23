@@ -46,13 +46,16 @@
         <div id="todaySpecial" class="row">
                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="shadow rounded card dishCard">
-                        <img class="card-img-top h-50" src="http://forkify-api.herokuapp.com/images/BBQChickenPizzawithCauliflowerCrust5004699695624ce.jpg" />
+                        <img class="card-img-top h-50" src="https://forkify-api.herokuapp.com/images/51150600f4cb.jpg" />
                         <div class="card-body">
                             <h5 class="card-title text-dark">Pizza</h5>
                             <div class="d-flex flex-wrap justify-content-between">
                                 <a href="/Recipe/Order?id=664c8f193e7aa067e94e8610"
                                    class="btn btn-sm bg-black text-white shadow rounded p-2">Order</a>
-                                <span class="addToCartIcon"><i class="fa-regular fa-heart fs-3"></i></span>
+                                <span class="addToCartIcon" onclick="cart.call(this)"
+                                      data-recipeId="664c8f193e7aa067e94e89af">
+                                    <i class="fa-regular fa-heart fs-3"></i>
+                                </span>
                             </div>
                             
                         </div>
@@ -60,13 +63,17 @@
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="shadow rounded card dishCard">
-                        <img class="card-img-top h-50" src="http://forkify-api.herokuapp.com/images/gelatin_poke_cake2d07.jpg" />
+                        <img class="card-img-top h-50" 
+                             src="https://forkify-api.herokuapp.com/images/gelatin_poke_cake2d07.jpg" />
                         <div class="card-body">
-                            <h5 class="card-title text-dark">Cake</h5>
+                            <p class="card-title text-dark">Cake</p>
                             <div class="d-flex flex-wrap justify-content-between">
                             <a href="/Recipe/Order?id=664c8f193e7aa067e94e893a"
                                    class="btn btn-sm bg-black text-white shadow rounded p-2">Order</a>
-                                <span class="addToCartIcon"><i class="fa-regular fa-heart fs-3"></i></span>
+                                <span class="addToCartIcon" onclick="cart.call(this)"
+                                      data-recipeId="664c8f193e7aa067e94e893a">
+                                    <i class="fa-regular fa-heart fs-3"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -75,11 +82,15 @@
                     <div class="shadow rounded card dishCard">
                         <img class="card-img-top h-50" src="https://forkify-api.herokuapp.com/images/RecipeImageff4f.jpg" />
                         <div class="card-body">
-                            <h5 class="card-title text-dark">Blueberry</h5>
+                            <h5 class="card-title fw-bold fs-6 text-dark">Blueberry</h5>
+
                             <div class="d-flex flex-wrap justify-content-between">
                             <a href="/Recipe/Order?id=664c8f193e7aa067e94e8af8"
                                class="btn btn-sm bg-black text-white shadow rounded p-2">Order</a>
-                                <span class="addToCartIcon"><i class="fa-regular fa-heart fs-3"></i></span>
+                                <span class="addToCartIcon" onclick="cart.call(this)"
+                                      data-recipeId="664c8f193e7aa067e94e8af8">
+                                    <i class="fa-regular fa-heart fs-3"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
